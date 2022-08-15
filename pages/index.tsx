@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           flexDir="column"
           height="100vh"
           w="100vw"
-          bg="#370202"
+          backgroundImage="/images/under_construction/background.png"
           objectPosition="center"
           color="white"
           padding={8}
@@ -32,12 +32,12 @@ const Home: NextPage = () => {
           <Heading textAlign="center" lineHeight={1} fontSize="1.5rem">
             Welcome to <Link href="/">SP Nutrition Argentina</Link>
           </Heading>
-          <Text lineHeight={1}>
+          <Text lineHeight="1.25rem">
             Estamos trabajando en un nuevo sitio. Mientras tanto, visitá nuestra
             tienda online 👇
           </Text>
           <a href="https://www.tienda.spnutrition.com.ar" target="blank">
-            <Button>Ir a la tienda</Button>
+            <Button variant="primary">Ir a la tienda</Button>
           </a>
         </Center>
       </main>

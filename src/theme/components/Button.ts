@@ -11,48 +11,27 @@ export const Button = {
   // styles for different sizes ("sm", "md", "lg")
   sizes: {
     sm: {
-      px: 2,
-      py: 1,
-      borderRadius: "2em",
+      borderRadius: "0.75em",
     },
   },
   // styles for different visual variants ("outline", "solid")
   variants: {
-    light: {
-      color: "black",
-      fontWeight: "normal",
-      _hover: {
-        bg: darken("white", 5),
-      },
-      _focus: {
-        borderColor: "black",
-        paddingBottom: 2,
-        borderBottomWidth: 1,
-      },
-      _active: {
-        borderColor: "black",
-        paddingBottom: 2,
-        borderBottomWidth: 1,
-      },
-    },
-    dark: {
+    primary: {
       color: "white",
-
       fontWeight: "normal",
+      border: "1px solid red",
+      bg: "red",
+      paddingX: 4,
       _hover: {
-        bg: whiten("black", 10),
+        bg: "transparent",
+        color: "red"
       },
       _focus: {
-        borderColor: "white",
-        paddingBottom: 2,
-        borderBottomWidth: 1,
-        borderRadius: 0,
+        bg: "red.900",
+        color: "red"
       },
       _active: {
-        borderColor: "white",
-        paddingBottom: 2,
-        borderBottomWidth: 1,
-        borderRadius: 0,
+        bg: "red.400",
       },
     },
   },
